@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link href="https://fonts.googleapis.com/css2?family=Arima:wght@200&family=Cookie&family=Dancing+Script:wght@400;600&family=Great+Vibes&family=Lavishly+Yours&family=Niconne&family=Permanent+Marker&family=Salsa&family=Satisfy&family=Smooch&family=Special+Elite&family=The+Nautigal:wght@400;700&family=Ysabeau+SC:wght@500&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-image: url('https://media.istockphoto.com/id/1413530294/photo/asian-young-entrepreneur-working-outside-home.webp?b=1&s=170667a&w=0&k=20&c=oIJW7-wX8rO6Gt4yp13zDaJaqOvRD36fP7K5Y4F7tfg=');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        nav{
+            background-color: rgb(3, 57, 3);
+            /* border: 2px solid green; */
+            display: inline-block;
+            margin-left: 350px;
+            padding: 30px 150px 50px 100px;
+            position: absolute;
+            /* width: 700px; */
+            height: 1400px;
+
+        }
+        nav li{
+            display: inline-block;
+            
+        }
+        nav li a{
+            text-align: center;
+            text-decoration: none;
+            padding: 20px;
+            color: white;
+        }
+        .container{
+            display: flex;
+            flex-direction: row;
+        }
+        #box1{
+            /* border: 2px solid black; */
+            width: 860px;
+            height: 600px;
+            background-color: rgb(247, 221, 157);
+            margin: 200px 0px 0px 250px;
+            /* position: absolute; */
+            z-index: 80;
+            text-align: center;
+        }
+        #box2{
+            /* border: 2px solid black; */
+            width: 500px;
+            height: 300px;
+            background-color: rgb(87, 151, 111);
+            margin: 160px 0px 0px 650px;
+            position: absolute;
+        }
+        .map img{
+            border: 1px solid black;
+            width: 800px;
+            height: 400px;
+            margin: 20px;
+        }
+        .contact{
+            margin: 30px 0px 0px 600px;
+            position: absolute;
+            color: white;
+        }
+        .info{
+            margin: 150px 0px 0px 450px;
+            position: absolute;
+            color: white;
+            border: none;
+        }
+        .input{
+            border: none;
+            width: 250px;
+            border-bottom: 1px solid white;
+            background-color: rgb(3, 57, 3);
+            text-decoration: underline;
+            color: white;
+        }
+        .info1{
+            margin: 150px 0px 0px 720px;
+            color: white;
+            position: absolute;
+            border: none;
+        }
+        #name{
+
+            width: 525px;
+        }
+        #email1{
+            width: 525px;
+        }
+        #message{
+            width: 525px;
+            margin-top: 100px;
+        }
+        #submit{
+            margin: 30px 0px 0px 180px;
+            padding: 10px 50px 10px 50px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h2 style="text-align: center; color: white;font-family: 'Satisfy', cursive;">Green Leaf Cafe</h2>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="indexabout.html">About</a></li>
+            <li><a href="indexmenu.html">Menu</a></li>
+            <li><a href="indexorder.html">Order</a></li>
+            <li><a href="indexcontact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div id="box1">
+            <h1>CONTACT</h1>
+            <h2>LOCATION</h2>
+            <P>120 West 74th Street, London E1 1JE, UK</P>
+            <div class="map"><img src="https://s1.cdn.autoevolution.com/images/news/google-maps-apparently-told-someone-to-drive-into-a-mango-tree-the-internet-goes-nuts-177726_1.jpg"></div>
+        </div>
+        <div id="box2"></div>
+    </div>
+    <div class="contact">
+        <h2>FOR INQUIRIES</h2>
+        <P>67589765 | sakshi12@gmail.com</P>
+    </div>
+    <div class="info">
+        <p>Name*</p>
+        <input type="text" name="" id="name" class="input">
+        <p>Email*</p>
+        <input type="email" name="" id="email1" class="input">
+        <p>Message*</p>
+        <input type="text" name="" id="message" class="input"><br>
+        <button id="submit" onclick="submit()">SUBMIT</button>
+    </div>
+</body>
+<script src="js/index.js"></script>
+</html>
